@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+#panel{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto;
+  min-height: 100vh;
+}
+
+#sidebar{
+  grid-column: 1;
+  grid-row: 1 / -1;
+  background-color: blue;
+}
