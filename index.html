@@ -1,35 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/62974ef814.js" crossorigin="anonymous"></script>
-  <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="panel">
-    <div id="sidebar">
-      <div class="dashboard-title">
-        <i class="fa-solid fa-compass"></i>Dashboard
-      </div>
-      <ul class="menu">
-        <li class="menu__item"><i class="fa-solid fa-house"></i>Home</li>
-        <li class="menu__item"><i class="fa-solid fa-address-card"></i>Profile</li>
-        <li class="menu__item"><i class="fa-solid fa-message"></i>Messages</li>
-        <li class="menu__item"><i class="fa-solid fa-clock-rotate-left"></i>History</li>
-        <li class="menu__item"><i class="fa-solid fa-file-pen"></i>Tasks</li>
-        <li class="menu__item"><i class="fa-solid fa-people-group"></i>Communities</li>
-        <li class="menu__item"><i class="fa-solid fa-gear"></i>Settings</li>
-        <li class="menu__item"><i class="fa-solid fa-circle-question"></i>Support</li>
-        <li class="menu__item"><i class="fa-solid fa-shield-halved"></i>Privacy</li>
-      </ul>
-    </div>
-    
-    <div id="header"></div>
-    <div id="content"></div>
-  </div>
-  
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/62974ef814.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Admin Dashboard</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="panel">
+			<div id="sidebar">
+				<div class="dashboard-title">
+					<i class="fa-solid fa-compass"></i>Dashboard
+				</div>
+				<ul class="menu">
+					<li class="menu__item"><i class="fa-solid fa-house"></i>Home</li>
+					<li class="menu__item">
+						<i class="fa-solid fa-address-card"></i>Profile
+					</li>
+					<li class="menu__item">
+						<i class="fa-solid fa-message"></i>Messages
+					</li>
+					<li class="menu__item">
+						<i class="fa-solid fa-clock-rotate-left"></i>History
+					</li>
+					<li class="menu__item"><i class="fa-solid fa-file-pen"></i>Tasks</li>
+					<li class="menu__item">
+						<i class="fa-solid fa-people-group"></i>Communities
+					</li>
+					<li class="menu__item"><i class="fa-solid fa-gear"></i>Settings</li>
+					<li class="menu__item">
+						<i class="fa-solid fa-circle-question"></i>Support
+					</li>
+					<li class="menu__item">
+						<i class="fa-solid fa-shield-halved"></i>Privacy
+					</li>
+				</ul>
+			</div>
+			<div id="header">
+				<div class="profile-bar">
+					<div class="search">
+						<i class="fa-solid fa-magnifying-glass"></i>
+						<input type="text" />
+					</div>
+					<i class="fa-solid fa-bell"></i>
+					<span class="avatar">
+						<img
+							src="https://assets.materialup.com/uploads/b78ca002-cd6c-4f84-befb-c09dd9261025/preview.png"
+							alt=""
+						/>
+					</span>
+					<span class="name">Morgan Oakley</span>
+				</div>
+				<div class="action-bar">
+					<span class="pic"
+						><img
+							src="https://assets.materialup.com/uploads/b78ca002-cd6c-4f84-befb-c09dd9261025/preview.png"
+					/></span>
+					<div class="greeting">
+						<p>Hi there</p>
+						<p>Morgan Oakley <span>(@morgan)</span></p>
+					</div>
+					<button>New</button>
+					<button>Upload</button>
+					<button>Share</button>
+				</div>
+			</div>
+			<div id="content">
+				<div class="projects">
+					<p>Your Projects</p>
+					<div class="project">
+						<p class="project__title">Super Cool Project</p>
+						<p class="project__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+							beatae facilis neque delectus excepturi voluptate iste eveniet
+							incidunt ut accusamus. Aspernatur tempore voluptatibus temporibus
+							non veritatis, praesentium neque voluptas odio.
+						</p>
+						<div class="project__icons">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-solid fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+					<div class="project">
+						<p class="project__title">Less Cool Project</p>
+						<p class="project__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+							beatae facilis neque delectus excepturi voluptate iste eveniet
+							incidunt ut accusamus. Aspernatur tempore voluptatibus temporibus
+							non veritatis, praesentium neque voluptas odio.
+						</p>
+						<div class="project__icons">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-solid fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+					<div class="project">
+						<p class="project__title">Impossible App</p>
+						<p class="project__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+							beatae facilis neque delectus excepturi voluptate iste eveniet
+							incidunt ut accusamus. Aspernatur tempore voluptatibus temporibus
+							non veritatis, praesentium neque voluptas odio.
+						</p>
+						<div class="project__icons">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-solid fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+					<div class="project">
+						<p class="project__title">Easy Peasy App</p>
+						<p class="project__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+							beatae facilis neque delectus excepturi voluptate iste eveniet
+							incidunt ut accusamus. Aspernatur tempore voluptatibus temporibus
+							non veritatis, praesentium neque voluptas odio.
+						</p>
+						<div class="project__icons">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-solid fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+					<div class="project">
+						<p class="project__title">Ad Blocker</p>
+						<p class="project__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+							beatae facilis neque delectus excepturi voluptate iste eveniet
+							incidunt ut accusamus. Aspernatur tempore voluptatibus temporibus
+							non veritatis, praesentium neque voluptas odio.
+						</p>
+						<div class="project__icons">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-solid fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+					<div class="project">
+						<p class="project__title">Money Maker</p>
+						<p class="project__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+							beatae facilis neque delectus excepturi voluptate iste eveniet
+							incidunt ut accusamus. Aspernatur tempore voluptatibus temporibus
+							non veritatis, praesentium neque voluptas odio.
+						</p>
+						<div class="project__icons">
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-solid fa-eye"></i>
+							<i class="fa-solid fa-share-nodes"></i>
+						</div>
+					</div>
+				</div>
+				<aside>
+					<div class="announce">
+						<span>Announcements</span>
+						<ul class="announce-list">
+							<li class="announce-item">
+								<p>Site Maintenance</p>
+								<p class="announce-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Aliquam recusandae, esse consequuntur quidem tempora vero
+									necessitatibus repudiandae nesciunt aut fuga nam, quibusdam
+									sed quo distinctio vel quasi quos nobis ea!
+								</p>
+							</li>
+							<li class="announce-item">
+								<p>Community Share Day</p>
+								<p class="announce-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Aliquam recusandae, esse consequuntur quidem tempora vero
+									necessitatibus repudiandae nesciunt aut fuga nam, quibusdam
+									sed quo distinctio vel quasi quos nobis ea!
+								</p>
+							</li>
+							<li class="announce-item">
+								<p>Updated Privacy Policy</p>
+								<p class="announce-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Aliquam recusandae, esse consequuntur quidem tempora vero
+									necessitatibus repudiandae nesciunt aut fuga nam, quibusdam
+									sed quo distinctio vel quasi quos nobis ea!
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="trending">
+						<span>Trending</span>
+						<ul class="trending-list">
+							<li class="trending-item">
+								<span class="trend-pic"
+									><img
+										src="https://i.pinimg.com/originals/3e/4a/f0/3e4af0acbc1aabaf026aa2cf9fb8c123.png"
+										alt=""
+								/></span>
+								<p class="trend-person">
+									<span class="trend-nick">@tegan</span
+									><span class="trend-name">World Peace Builder</span>
+								</p>
+							</li>
+							<li class="trending-item">
+								<span class="trend-pic"
+									><img
+										src="https://assets.materialup.com/uploads/b78ca002-cd6c-4f84-befb-c09dd9261025/preview.png"
+										alt=""
+								/></span>
+								<p class="trend-person">
+									<span class="trend-nick">@morgan</span
+									><span class="trend-name">Super Cool Project</span>
+								</p>
+							</li>
+							<li class="trending-item">
+								<span class="trend-pic"
+									><img
+										src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+										alt=""
+								/></span>
+								<p class="trend-person">
+									<span class="trend-nick">@kendall</span
+									><span class="trend-name">Life Changing App</span>
+								</p>
+							</li>
+							<li class="trending-item">
+								<span class="trend-pic"
+									><img
+										src="https://i.pinimg.com/originals/c7/b7/b7/c7b7b75ea49a414fad84721676d4f868.jpg"
+										alt=""
+								/></span>
+								<p class="trend-person">
+									<span class="trend-nick">@alex</span
+									><span class="trend-name">No Traffic Maker</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</body>
 </html>
